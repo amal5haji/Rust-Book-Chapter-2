@@ -4,7 +4,6 @@ use colored::*;
 
 fn main() {
     println!("{}","***Guess the number game***".yellow());
-
     loop {
         let mut num: String= String::new();
         
@@ -13,7 +12,7 @@ fn main() {
         
         println!("Enter a number");
         io::stdin().read_line(&mut num).expect("read line failed");
-        println!("Input number {}", num);
+        println!("Input number is {}", num);
 
         let num: i32 =match num.trim().parse(){
             Ok(num) => num,
